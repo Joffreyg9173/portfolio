@@ -4,9 +4,10 @@ import portrait from '@/assets/mustafo-portrait.png';
 
 const Hero = () => {
   const { t } = useLang();
+
   return (
-    <section id="home" className="min-h-svh flex flex-col lg:flex-row overflow-hidden">
-      <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 lg:px-24 py-24 bg-background order-2 lg:order-1">
+    <section id="home" className="min-h-svh md:h-svh flex flex-col md:flex-row overflow-hidden">
+      <div className="w-full md:w-1/2 flex flex-col justify-center px-8 lg:px-24 py-16 md:py-24 bg-background order-2 md:order-1">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -31,14 +32,14 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      <div className="w-full lg:w-1/2 min-h-[50vh] lg:min-h-svh relative bg-primary flex items-end justify-center order-1 lg:order-2">
+      <div className="w-full md:w-1/2 h-[42svh] md:h-full relative bg-primary flex items-center justify-center order-1 md:order-2">
         <motion.img
           initial={{ opacity: 0, scale: 1.1 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.5 }}
           src={portrait}
           alt="Mustafo Xalimov"
-          className="w-full h-full object-contain object-bottom"
+          className="w-full h-full object-contain object-top"
         />
         <div className="absolute inset-0 bg-accent/10 mix-blend-multiply pointer-events-none" />
       </div>
