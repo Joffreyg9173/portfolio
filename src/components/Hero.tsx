@@ -10,7 +10,7 @@ const Hero = () => {
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, ease: [0.2, 0, 0, 1] }}
+          transition={{ duration: 0.8, ease: [0.2, 0, 0, 1] as const }}
         >
           <h2 className="text-2xl font-bold tracking-tighter mb-2">{t.hero.hi}</h2>
           <h1 className="text-6xl lg:text-8xl xl:text-9xl font-black leading-[0.9] tracking-tighter mb-8">
