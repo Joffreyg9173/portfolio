@@ -5,8 +5,8 @@ import portrait from '@/assets/mustafo-portrait.png';
 const Hero = () => {
   const { t } = useLang();
   return (
-    <section id="home" className="min-h-svh flex flex-col lg:flex-row items-stretch overflow-hidden">
-      <div className="flex-1 flex flex-col justify-center px-8 lg:px-24 py-24 bg-background">
+    <section id="home" className="min-h-svh flex flex-col-reverse lg:flex-row overflow-hidden">
+      <div className="w-full lg:w-1/2 flex flex-col justify-center px-8 lg:px-24 py-24 bg-background">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
@@ -31,7 +31,7 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      <div className="flex-1 relative bg-primary min-h-[50vh] lg:min-h-full">
+      <div className="w-full lg:w-1/2 h-[50vh] lg:h-auto lg:min-h-svh relative bg-primary">
         <motion.img
           initial={{ opacity: 0, scale: 1.1 }}
           animate={{ opacity: 1, scale: 1 }}
