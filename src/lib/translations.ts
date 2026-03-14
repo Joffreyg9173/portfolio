@@ -20,7 +20,7 @@ export const content = {
       school: "Samarkand International University of Technology (SIUT)",
       degree: "Bachelor's Degree in Computer Science",
       year: "Year: 2nd year",
-      gpa: "GPA: 4.48 / 4.5",
+      gpa: "GPA: 4.48 / 5",
     },
     skills: {
       title: "Skills",
